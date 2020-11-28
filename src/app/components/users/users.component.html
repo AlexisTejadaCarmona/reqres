@@ -1,0 +1,10 @@
+<div class="card-columns">
+    <div *ngFor="let user of Users" class="card shadow">
+        <img [src]="user.avatar" alt="" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">{{ user.first_name }} {{ user.last_name }}</h5>
+            <p class="card-text">{{ user.email }}</p>
+        </div>
+    </div>
+</div>
+
